@@ -59,14 +59,16 @@
 </div></div></div>
 
 <!-- Main content -->
-<section>
-  <div class="full">
-  
-   <p>My interests center around reinforcement learning for high-dimensional control tasks. Currently, my research focuses on finding sample-efficient and principled exploration methods for deep reinforcement learning. My previous work focused on domain adaptation and transfer learning in deep neural networks, specifically from virtual environments, such as video games, to real-world scenarios.</p>
- 
-  </div>
-  <div class="clearfix"></div>
-</section>
+  <section>
+    <div class="full">
+    
+     <p>My interests center around reinforcement learning for high-dimensional control tasks. Currently, my research focuses on finding sample-efficient and principled exploration methods for deep reinforcement learning. My previous work focused on domain adaptation and transfer learning in deep neural networks, specifically from virtual environments, such as video games, to real-world scenarios.</p>
+   
+    </div>
+    <div class="clearfix"></div>
+  </section>
+
+  <!-- Atari Zoo -->
   <section id="zoo">
     <hr>
     <div class="one_third">
@@ -78,10 +80,10 @@
 
       <p><a href="https://arxiv.org/abs/1812.07069">arXiv</a>  &nbsp; <a href="https://eng.uber.com/atari-zoo-deep-reinforcement-learning/">Blog Post</a> &nbsp; <a href="https://github.com/uber-research/atari-model-zoo">Code</a></p>
     </div>
-
     <div class="clearfix"></div>
   </section>
    
+  <!-- BDD 100K -->
   <section id="bdd_data">
     <hr>
     <div class="two_thirds">
@@ -89,88 +91,88 @@
 	  <h2>BDD100K: A Diverse Driving Video Database with Scalable Annotation Tooling</h2>
 	  <p>Datasets drive vision progress and autonomous driving is a critical vision application, yet existing driving datasets are impoverished in terms of visual content. Driving imagery is becoming plentiful, but annotation is slow and expensive, as annotation tools have not kept pace with the flood of data. Our first contribution is the design and implementation of a scalable annotation system that can provide a comprehensive set of image labels for large-scale driving datasets. Our second contribution is a new driving dataset, facilitated by our tooling, which is an order of magnitude larger than previous efforts, and is comprised of over 100K videos with diverse kinds of annotations including image level tagging, object bounding boxes, drivable areas, lane markings, and full-frame instance segmentation. The dataset possesses geographic, environmental, and weather diversity, which is useful for training models so that they are less likely to be surprised by new conditions.</p>
 
-  <p><a href="https://arxiv.org/abs/1805.04687">Arxiv</a>  &nbsp; <a href="http://bdd-data.berkeley.edu/">Website</a> &nbsp;</p>
-  </div>
-  <div class="one_third">
-      <img src="../img/bdd_100k.png" height=250 width=300 alt="">
-  </div>
-  <div class="clearfix"></div>
-</section>
+    <p><a href="https://arxiv.org/abs/1805.04687">Arxiv</a>  &nbsp; <a href="http://bdd-data.berkeley.edu/">Website</a> &nbsp;</p>
+    </div>
+    <div class="one_third">
+        <img src="../img/bdd_100k.png" height=250 width=300 alt="">
+    </div>
+    <div class="clearfix"></div>
+  </section>
    
-<section id="evolution">
-  <div class="two_thirds">
-  <h2>Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents</h2>
-  <p>Evolution strategies (ES) are a family of black-box optimization algorithms able to train deep neural networks roughly as well as Q-learning and policy gradient methods on challenging deep reinforcement learning (RL) problems, but are much faster (e.g. hours vs. days) because they parallelize better. However, many RL problems require directed exploration because they have reward functions that are sparse or deceptive (i.e. contain local optima), and it is not known how to encourage such exploration with ES. Here we show that algorithms that have been invented to promote directed exploration in small-scale evolved neural networks via populations of exploring agents, specifically novelty search (NS) and quality diversity (QD) algorithms, can be hybridized with ES to improve its performance on sparse or deceptive deep RL tasks, while retaining scalability. Our experiments confirm that the resultant new algorithms, NS-ES and a version of QD we call NSR-ES, avoid local optima encountered by ES to achieve higher performance on tasks ranging from playing Atari to simulated robots learning to walk around a deceptive trap.</p>
+  <!-- NSRA -->
+  <section id="evolution">
+    <div class="two_thirds">
+    <h2>Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents</h2>
+    <p>Evolution strategies (ES) are a family of black-box optimization algorithms able to train deep neural networks roughly as well as Q-learning and policy gradient methods on challenging deep reinforcement learning (RL) problems, but are much faster (e.g. hours vs. days) because they parallelize better. However, many RL problems require directed exploration because they have reward functions that are sparse or deceptive (i.e. contain local optima), and it is not known how to encourage such exploration with ES. Here we show that algorithms that have been invented to promote directed exploration in small-scale evolved neural networks via populations of exploring agents, specifically novelty search (NS) and quality diversity (QD) algorithms, can be hybridized with ES to improve its performance on sparse or deceptive deep RL tasks, while retaining scalability. Our experiments confirm that the resultant new algorithms, NS-ES and a version of QD we call NSR-ES, avoid local optima encountered by ES to achieve higher performance on tasks ranging from playing Atari to simulated robots learning to walk around a deceptive trap.</p>
 
-  <p><a href="https://arxiv.org/abs/1712.06560">arXiv</a>  &nbsp; <a href="https://eng.uber.com/deep-neuroevolution/">Blog Post</a> &nbsp;</p>
-  </div>
-  <div class="one_third">
-      <img src="../img/muj_wall.png" height=250 width=300 alt="">
-  </div>
+    <p><a href="https://arxiv.org/abs/1712.06560">arXiv</a>  &nbsp; <a href="https://eng.uber.com/deep-neuroevolution/">Blog Post</a> &nbsp;</p>
+    </div>
+    <div class="one_third">
+        <img src="../img/muj_wall.png" height=250 width=300 alt="">
+    </div>
 
-  <div class="clearfix"></div>
-</section>
+    <div class="clearfix"></div>
+  </section>
 
- <section id="evolution2">
-  <div class="one_third">
-      <img src="../img/frostbite.png" height=300 width=250 alt="">
-  </div>
-  <div class="two_thirds">
-  <h2>Deep Neuroevolution: Genetic Algorithms Are a Competitive Alternative for Training Deep Neural Networks for Reinforcement Learning</h2>
-  <p>Deep artificial neural networks (DNNs) are typically trained via gradient-based learning algorithms, namely backpropagation. Evolution strategies (ES) can rival backprop-based algorithms such as Q-learning and policy gradients on challenging deep reinforcement learning (RL) problems. However, ES can be considered a gradient-based algorithm because it performs stochastic gradient descent via an operation similar to a finite-difference approximation of the gradient. That raises the question of whether non-gradient-based evolutionary algorithms can work at DNN scales. Here we demonstrate they can: we evolve the weights of a DNN with a simple, gradient-free, population-based genetic algorithm (GA) and it performs well on hard deep RL problems, including Atari and humanoid locomotion. The Deep GA successfully evolves networks with over four million free parameters, the largest neural networks ever evolved with a traditional evolutionary algorithm.</p>
+  <!-- Deep GA -->
+  <section id="evolution2">
+    <div class="one_third">
+        <img src="../img/frostbite.png" height=300 width=250 alt="">
+    </div>
+    <div class="two_thirds">
+    <h2>Deep Neuroevolution: Genetic Algorithms Are a Competitive Alternative for Training Deep Neural Networks for Reinforcement Learning</h2>
+    <p>Deep artificial neural networks (DNNs) are typically trained via gradient-based learning algorithms, namely backpropagation. Evolution strategies (ES) can rival backprop-based algorithms such as Q-learning and policy gradients on challenging deep reinforcement learning (RL) problems. However, ES can be considered a gradient-based algorithm because it performs stochastic gradient descent via an operation similar to a finite-difference approximation of the gradient. That raises the question of whether non-gradient-based evolutionary algorithms can work at DNN scales. Here we demonstrate they can: we evolve the weights of a DNN with a simple, gradient-free, population-based genetic algorithm (GA) and it performs well on hard deep RL problems, including Atari and humanoid locomotion. The Deep GA successfully evolves networks with over four million free parameters, the largest neural networks ever evolved with a traditional evolutionary algorithm.</p>
 
-  <p><a href="https://arxiv.org/abs/1712.06567">arXiv</a>  &nbsp; <a href="https://eng.uber.com/deep-neuroevolution/">Blog Post</a> &nbsp;</p>
-  </div>
+    <p><a href="https://arxiv.org/abs/1712.06567">arXiv</a>  &nbsp; <a href="https://eng.uber.com/deep-neuroevolution/">Blog Post</a> &nbsp;</p>
+    </div>
 
-  <div class="clearfix"></div>
-</section>
-   
-   <section id="bdd">
-       
-  <div class="two_thirds">
-  <!-- BDD -->
-  <h2>Examining the Effects of Supervision for Transfer from Synthetic to Real Driving Domains</h2>
-  <p>With the surge of autonomous driving efforts in industry, semantic understanding of road scenes has become more commercially relevant than ever. Semantic segmentation, or dense pixel prediction, has become a popular approach for scene understanding, as the meteoric rise of deep convolutional networks (CNNs) has led to significant progress in recent years. However, these deep networks require large amounts of data, labeled at the pixel level, which can be quite cumbersome to collect for the driving domain. As a result, many have looked to realistic virtual world simulators (i.e. video games), for collecting large volumes of labeled data. Despite the visual similarity between real and synthetic domains, models trained on synthetic street scenes show poor results when evaluated on real-world data. To compensate for this visual shift, supervision from the real domain is necessary. In this work, I examine how much real-world supervision is appropriate for effective transfer of models pretrained on synthetic. Utilizing recent methods of supervised and semi-supervised transfer for fully convolutional networks (FCNs), I achieve promising results with a very small amount of labeled data(~50 images). By also quantitatively measuring different levels of domain shift, I reveal how simple metrics about a synthetic domain can be used to infer the ability of network features to transfer.</p>
+    <div class="clearfix"></div>
+  </section>
 
-  <p><a href="../pdf/drive_transfer.pdf">PDF</a>  &nbsp; <a href="../pdf/drive_slides.pdf">Presentation</a> &nbsp;</p>
-  </div>
-  <div class="one_third">
-      <img src="../img/net2.png" height=300 width=300 alt="">
-  </div>
+  <!-- Semi-Supervised Transfer -->
+  <section id="bdd">   
+    <div class="two_thirds">
+    <!-- BDD -->
+    <h2>Examining the Effects of Supervision for Transfer from Synthetic to Real Driving Domains</h2>
+    <p>With the surge of autonomous driving efforts in industry, semantic understanding of road scenes has become more commercially relevant than ever. Semantic segmentation, or dense pixel prediction, has become a popular approach for scene understanding, as the meteoric rise of deep convolutional networks (CNNs) has led to significant progress in recent years. However, these deep networks require large amounts of data, labeled at the pixel level, which can be quite cumbersome to collect for the driving domain. As a result, many have looked to realistic virtual world simulators (i.e. video games), for collecting large volumes of labeled data. Despite the visual similarity between real and synthetic domains, models trained on synthetic street scenes show poor results when evaluated on real-world data. To compensate for this visual shift, supervision from the real domain is necessary. In this work, I examine how much real-world supervision is appropriate for effective transfer of models pretrained on synthetic. Utilizing recent methods of supervised and semi-supervised transfer for fully convolutional networks (FCNs), I achieve promising results with a very small amount of labeled data(~50 images). By also quantitatively measuring different levels of domain shift, I reveal how simple metrics about a synthetic domain can be used to infer the ability of network features to transfer.</p>
 
-  <div class="clearfix"></div>
-</section>
+    <p><a href="../pdf/drive_transfer.pdf">PDF</a>  &nbsp; <a href="../pdf/drive_slides.pdf">Presentation</a> &nbsp;</p>
+    </div>
+    <div class="one_third">
+        <img src="../img/net2.png" height=300 width=300 alt="">
+    </div>
 
-
-    <!-- Image Net Delta -->
-    <section id="finetune">
-       <div class="one_third">
-          <img src="../img/transfer_plot2.png" height=300 width=300 alt="">
-        </div>
-
-      <div class="two_thirds">
-  <h2>Best Practices for Fine-Tuning Visual Classifiers to New Domains</h2>
-  <p>Recent studies have shown that features from deep convolutional neural networks learned using large labeled datasets, like ImageNet, provide effective representations for a variety of visual recognition tasks. They achieve strong performance as generic features and are even more effective when fine-tuned to target datasets. However, details of the fine-tuning procedure across datasets and with different amount of labeled data are not well-studied and choosing the best fine-tuning method is often left to trial and error. In this work we systematically explore the design-space for fine-tuning and give recommendations based on two key characteristics of the target dataset: visual distance from source dataset and the amount of available training data. Through a comprehensive experimental analysis, we conclude, with a few exceptions, that it is best to copy as many layers of a pre-trained network as possible, and then adjust the level of fine-tuning based on the visual distance from source.</p>
-  <p><a href="../pdf/practices-fine-tuning.pdf">PDF</a> &nbsp; <a href="../pdf/taskcv_poster.pdf">Presentation</a> &nbsp;</p>
-  </div>
-  <div class="clearfix"></div>
-   </section>
+    <div class="clearfix"></div>
+  </section>
 
 
-  
+  <!-- Image Net Delta -->
+  <section id="finetune">
+    <div class="one_third">
+      <img src="../img/transfer_plot2.png" height=300 width=300 alt="">
+    </div>
+    <div class="two_thirds">
+      <h2>Best Practices for Fine-Tuning Visual Classifiers to New Domains</h2>
+      <p>Recent studies have shown that features from deep convolutional neural networks learned using large labeled datasets, like ImageNet, provide effective representations for a variety of visual recognition tasks. They achieve strong performance as generic features and are even more effective when fine-tuned to target datasets. However, details of the fine-tuning procedure across datasets and with different amount of labeled data are not well-studied and choosing the best fine-tuning method is often left to trial and error. In this work we systematically explore the design-space for fine-tuning and give recommendations based on two key characteristics of the target dataset: visual distance from source dataset and the amount of available training data. Through a comprehensive experimental analysis, we conclude, with a few exceptions, that it is best to copy as many layers of a pre-trained network as possible, and then adjust the level of fine-tuning based on the visual distance from source.</p>
+      <p><a href="../pdf/practices-fine-tuning.pdf">PDF</a> &nbsp; <a href="../pdf/taskcv_poster.pdf">Presentation</a> &nbsp;</p>
+    </div>
+    <div class="clearfix"></div>
+  </section>
+
   <!-- GAN -->
-     <section id="gan">
-      <div class="two_thirds">
-  <h2>Image Generation from Captions Using Dual-Loss Generative Adversarial Networks</h2>
-  <p> Deep Convolutional Generative Adversarial Networks (DCGANs) have become popular in recent months for their ability to effectively capture image distributions and generate realistic images. Recent work has also shown that conditional information provided to Generative Adversarial Networks (GANs) allows for deterministic control of generated images simply through the regulation of the conditional vector. Although many have hinted that language models could be used as conditional information for generating images from words, there are very few attempts using GANs, much less DCGANs. In this project we explore and analyze the results of image generation by encoding captions as conditional information to our DCCGAN. We use a subset of the MSCOCO dataset to evaluate our results. </p>
+  <section id="gan">
+    <div class="two_thirds">
+      <h2>Image Generation from Captions Using Dual-Loss Generative Adversarial Networks</h2>
+      <p> Deep Convolutional Generative Adversarial Networks (DCGANs) have become popular in recent months for their ability to effectively capture image distributions and generate realistic images. Recent work has also shown that conditional information provided to Generative Adversarial Networks (GANs) allows for deterministic control of generated images simply through the regulation of the conditional vector. Although many have hinted that language models could be used as conditional information for generating images from words, there are very few attempts using GANs, much less DCGANs. In this project we explore and analyze the results of image generation by encoding captions as conditional information to our DCCGAN. We use a subset of the MSCOCO dataset to evaluate our results. </p>
       <p><a href="../pdf/image-generation-captions.pdf">PDF</a> &nbsp;</p>
-      </div>
+    </div>
     <div class="one_third">
       <img src="../img/network.png" height=300 width=300 alt="">
     </div>
-  <div class="clearfix"></div>
-   </section>
-   <hr>
+    <div class="clearfix"></div>
+  </section>
+  <hr>
+
 <div class="title" style="background-image:url(../img/equations.jpg);"><div class="container"><div class="full">
   <h2>PROJECTS</h2>
 </div></div></div>
