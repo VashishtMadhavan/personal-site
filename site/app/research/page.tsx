@@ -19,6 +19,12 @@ export default function Home() {
             conference="CVPR '22"
         />
         <PublicationLink 
+            href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Yu_BDD100K_A_Diverse_Driving_Dataset_for_Heterogeneous_Multitask_Learning_CVPR_2020_paper.pdf"
+            title="Bdd100k: A Diverse Driving Dataset for Heterogeneous Multitask Learning"
+            conference="CVPR '20"
+            blog="http://bair.berkeley.edu/blog/2018/05/30/bdd/"
+        />
+        <PublicationLink 
             href="https://arxiv.org/pdf/2003.01825.pdf%5D"
             title="Scaling Map-Elites to Deep Neuroevolution"
             conference="GECCO '20"
@@ -29,12 +35,6 @@ export default function Home() {
             conference="IJCAI '19"
             blog="https://www.uber.com/blog/atari-zoo-deep-reinforcement-learning/"
             code="https://github.com/uber-research/atari-model-zoo"
-        />
-        <PublicationLink 
-            href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Yu_BDD100K_A_Diverse_Driving_Dataset_for_Heterogeneous_Multitask_Learning_CVPR_2020_paper.pdf"
-            title="Bdd100k: A Diverse Driving Dataset for Heterogeneous Multitask Learning"
-            conference="CVPR '20"
-            blog="http://bair.berkeley.edu/blog/2018/05/30/bdd/"
         />
         <PublicationLink 
             href="https://proceedings.neurips.cc/paper/2018/file/b1301141feffabac455e1f90a7de2054-Paper.pdf"

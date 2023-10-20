@@ -10,7 +10,7 @@ export default function Home() {
           <img src="/portrait.jpeg" alt="portrait" className="w-[32rem] h-64"></img>
         </div>
         <div className="w-full mb-6 ml-6 font-serif">
-          <p>Im the co-founder and CTO of <Link href="https://humanlike.app/" className="text-cyan-600">Humanlike</Link>, where we build AI voice bots that automate phone calls for businesses. 
+          <p>I'm the co-founder and CTO of <Link href="https://humanlike.app/" className="text-cyan-600">Humanlike</Link>, where we build AI voice bots that automate phone calls for businesses. 
           We recently went through the <Link href="https://www.ycombinator.com/" className="text-cyan-600">YCombinator</Link> S23 batch.</p>
           <br />
           <p>I'm interested in AI systems, products, and research. Particularly, at the intersection of NLP and vision - so multimodal LLMs, OCR systems, etc.</p>
