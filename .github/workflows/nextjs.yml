@@ -31,6 +31,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Cd into site
+        run: $cd site
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -53,8 +55,6 @@ jobs:
         with:
           node-version: "16"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: Cd into site
-        run: $cd site
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
