@@ -40,7 +40,7 @@ export default function SettingsLayout({ children }: SettingsLayoutProps) {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.webp" />
       </Head>
       <div className="hidden space-y-6 p-10 pb-16 md:block">
         <section>

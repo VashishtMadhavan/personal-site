@@ -26,7 +26,7 @@ export default function Home() {
         <PublicationLink 
             href="https://arxiv.org/pdf/1812.07069"
             title="An Atari Model Zoo for Analyzing, Visualizing, and Comparing Deep Reinforcement Learning Agents"
-            conference=""
+            conference="IJCAI '19"
             blog="https://www.uber.com/blog/atari-zoo-deep-reinforcement-learning/"
             code="https://github.com/uber-research/atari-model-zoo"
         />
