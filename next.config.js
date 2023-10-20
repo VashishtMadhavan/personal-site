@@ -4,8 +4,8 @@
  **/
 const nextConfig = {
     output: "export",
-    assetPrefix: "",
-    basePath: "",
+    assetPrefix: "/vashishtmadhavan.github.io/",
+    basePath: "/vashishtmadhavan.github.io",
     images: {
       unoptimized: true,
     },
