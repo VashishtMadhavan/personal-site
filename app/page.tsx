@@ -7,7 +7,7 @@ export default function Home() {
     <div className="space-y-6 w-full">
       <div className="flex w-full flex-row items-center justify-center"> 
         <div className="mb-6">
-          <img src="/portrait.jpeg" alt="portrait" className="w-[32rem] h-64"></img>
+          <img src="/portrait.JPEG" alt="portrait" className="w-[32rem] h-64"></img>
         </div>
         <div className="w-full mb-6 ml-6 font-serif">
           <p>I'm the co-founder and CTO of <Link href="https://humanlike.app/" className="text-cyan-600">Humanlike</Link>, where we build AI voice bots that automate phone calls for businesses. 
