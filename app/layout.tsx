@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from "next/link";
 import { SidebarNav } from "@/components/sidebar-nav"
 import Header from "@/components/header"
-import './globals.css'
+import '@/app/globals.css'
 import Head from 'next/head';
 
 
