@@ -4,7 +4,8 @@
  **/
 const nextConfig = {
     output: "export",
-    basePath: "/vashishtmadhavan.github.io",
+    basePath: "/",
+    reactStrictMode: true,
     images: {
       unoptimized: true,
     },
