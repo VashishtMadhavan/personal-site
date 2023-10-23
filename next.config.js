@@ -1,14 +1,6 @@
-// @ts-check
-/**
- * @type {import('next').NextConfig}
- **/
-const nextConfig = {
-    output: "export",
-    basePath: "/",
-    reactStrictMode: true,
-    images: {
-      unoptimized: true,
-    },
-  };
-  
-  module.exports = nextConfig;
+/** @type {import('next').NextConfig} */
+const { withContentlayer } = require('next-contentlayer')
+
+const nextConfig = { reactStrictMode: true, swcMinify: true }
+
+module.exports = withContentlayer(nextConfig)
