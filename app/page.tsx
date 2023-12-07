@@ -33,7 +33,7 @@ export default function Home() {
           </li>
           <li className="flex items-center mb-2">
             <Image className="mr-4" src="/uber-logo.webp" alt="Uber" width={50} height={50} />
-            <p>Previously, I was an AI Researcher at <Link href="https://www.uber.com/us/en/uberai/" className="text-cyan-600">UberAI</Link>, working with <Link href="http://jeffclune.com/" className="text-cyan-600">Jeff Clune</Link>. I focused on RL <Link href="https://www.uber.com/blog/deep-neuroevolution/" className="text-cyan-600">algorithms research</Link> and applications for business units like <Link href="https://www.uber.com/blog/freight-markov/" className="text-cyan-600">Uber Freight</Link>.</p>
+            <p>Previously, I was an AI Researcher at <Link href="https://www.uber.com/us/en/uberai/" className="text-cyan-600">Uber AI</Link>, working with <Link href="http://jeffclune.com/" className="text-cyan-600">Jeff Clune</Link>. I focused on <Link href="https://www.uber.com/blog/deep-neuroevolution/" className="text-cyan-600">RL research</Link> and applications for business units like <Link href="https://www.uber.com/blog/freight-markov/" className="text-cyan-600">Uber Freight</Link>.</p>
           </li>
           <li className="flex items-center">
             <Image className="mr-4" src="/berkeley-seal.png" alt="Berkeley" width={50} height={50} />
