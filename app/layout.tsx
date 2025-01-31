@@ -29,6 +29,10 @@ const sidebarNavItems = [
     title: "Resume",
     href: "/resume.pdf",
   },
+  {
+    title: "Investments",
+    href: "/investments",
+  }
 ]
 
 interface RootLayoutProps {
