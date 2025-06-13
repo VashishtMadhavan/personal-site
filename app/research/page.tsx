@@ -13,6 +13,13 @@ export default function Home() {
         </p>
       </div>
       <div className="flex w-full flex-col items-left justify-left font-serif"> 
+        <PublicationLink
+            href="https://arxiv.org/abs/2410.03051"
+            title="AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark"
+            conference="ICLR '25"
+            blog="https://wenhaochai.com/aurora-web/"
+            code="https://github.com/rese1f/aurora"
+        />
         <PublicationLink 
             href="https://openaccess.thecvf.com/content/CVPR2022/papers/Alwani_DECORE_Deep_Compression_With_Reinforcement_Learning_CVPR_2022_paper.pdf" 
             title="DECORE: Deep Compression with Reinforcement Learning" 
@@ -20,7 +27,7 @@ export default function Home() {
         />
         <PublicationLink 
             href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Yu_BDD100K_A_Diverse_Driving_Dataset_for_Heterogeneous_Multitask_Learning_CVPR_2020_paper.pdf"
-            title="Bdd100k: A Diverse Driving Dataset for Heterogeneous Multitask Learning"
+            title="BDD100k: A Diverse Driving Dataset for Heterogeneous Multitask Learning"
             conference="CVPR '20"
             blog="http://bair.berkeley.edu/blog/2018/05/30/bdd/"
         />

@@ -27,7 +27,7 @@ const sidebarNavItems = [
   },
   {
     title: "Resume",
-    href: "/resume.pdf",
+    href: "/resume_vash.pdf",
   },
   {
     title: "Investments",

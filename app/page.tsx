@@ -10,8 +10,7 @@ export default function Home() {
           <Image src="/portrait.JPEG" alt="portrait" width={500} height={300} />
         </div>
         <div className="w-full mb-6 ml-6 font-serif">
-          <p>I'm the co-founder and CTO of <Link href="https://humanlike.app/" className="text-cyan-600">Humanlike</Link>, where we build AI voice bots that automate phone calls for businesses. 
-          We recently went through the <Link href="https://www.ycombinator.com/" className="text-cyan-600">YCombinator</Link> S23 batch.</p>
+          <p>I'm currently a Research Engineer at <Link href="https://pika.art" className="text-cyan-600">Pika</Link>, leading data curation and post-training efforts.</p>
           <br />
           <p>I'm interested in AI systems, products, and research. Particularly, at the intersection of NLP and vision - so multimodal LLMs, OCR systems, etc.</p>
 
@@ -27,6 +26,10 @@ export default function Home() {
       <div className="flex w-full flex-col items-left justify-left font-serif"> 
         <h2 className="text-2xl">Past</h2>
         <ul className="list-none pt-2">
+          <li className="flex items-center mb-2">
+            <Image className="mr-6" src="/humanlike.avif" alt="Humanlike" width={42} height={42} />
+            <p>I was the co-founder/CTO of <Link href="https://humanlike.app/" className="text-cyan-600">Humanlike</Link>, which built AI voice bots to automate phone calls for businesses. We went through the <Link href="https://www.ycombinator.com/" className="text-cyan-600">YCombinator</Link> S23 batch.</p>
+          </li>
           <li className="flex items-center mb-2">
             <Image className="mr-6" src="/snorkel-logo.webp" alt="Snorkel AI" width={42} height={42} />
             <p>I was a Staff ML Engineer at <Link href="http://snorkelai.com/" className="text-cyan-600">Snorkel AI</Link>, where I led development on the NLP platform for structured documents (i.e. PDFs, Images, Excel, etc.), now used by some of the largest  <Link href="https://snorkel.ai/how-schlumberger-uses-snorkel-flow-to-enhance-proactive-well-management/" className="text-cyan-600">Fortune 500s</Link>.</p>
