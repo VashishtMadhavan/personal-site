@@ -7,7 +7,7 @@ export default function Home() {
     <div className="space-y-6 w-full font-serif">
       <div className="flex w-full flex-row items-left justify-left"> 
         <p>
-        Occasionally, I angel invest. Here are a few exciting companies I've invested in:
+        I occasionally angel invest. Here are a few companies I've backed:
         </p>
       </div>
       <div className="flex w-full flex-col items-left justify-left font-serif space-y-2"> 

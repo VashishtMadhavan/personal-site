@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Link from "next/link";
 import { PublicationLink } from "@/components/publication"
 
 
@@ -8,8 +6,7 @@ export default function Home() {
     <div className="space-y-6 w-full font-serif">
       <div className="flex w-full flex-row items-left justify-left"> 
         <p>
-        Most of my <Link href="https://scholar.google.com/citations?user=WjF1dugAAAAJ&hl=en&oi=ao" className="text-cyan-600">research</Link> has been in RL or computer vision. At Uber AI, I focused on finding sample-efficient exploration methods for RL and at Berkeley, I worked on computer vision systems for autonomous driving.
-        There, my work revolved around transfer learning, specifically from synthetic environments, and data labeling for large-scale datasets.
+        I've mostly worked on RL and computer vision. Here are some recent papers:
         </p>
       </div>
       <div className="flex w-full flex-col items-left justify-left font-serif"> 
