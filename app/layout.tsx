@@ -1,64 +1,37 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import Image from 'next/image'
-import Link from "next/link";
-import { SidebarNav } from "@/components/sidebar-nav"
-import Header from "@/components/header"
-import '@/app/globals.css'
-import Head from 'next/head';
-
-
-const inter = Inter({ subsets: ['latin'] })
+import type { Metadata } from "next";
+import { SidebarNav } from "@/components/sidebar-nav";
+import Header from "@/components/header";
+import "@/app/globals.css";
 
 export const metadata: Metadata = {
-  title: 'Vashisht Madhavan',
-  description: 'Vashishts personal site',
-}
-
+  title: "Vashisht Madhavan · AI Researcher",
+  description: "Vashisht Madhavan — AI researcher, engineer, and investor.",
+  icons: {
+    icon: [{ url: "/vm-mark.png?v=2", type: "image/png" }],
+    shortcut: "/vm-mark.png?v=2",
+    apple: "/vm-mark.png?v=2",
+  },
+};
 
 const sidebarNavItems = [
-  {
-    title: "About",
-    href: "/",
-  },
-  {
-    title: "Research",
-    href: "/research",
-  },
-  {
-    title: "Resume",
-    href: "/resume_vash.pdf",
-  },
-  {
-    title: "Investments",
-    href: "/investments",
-  }
-]
+  { title: "About", href: "/" },
+  { title: "Research", href: "/research" },
+  { title: "Resume", href: "/resume_vash.pdf" },
+  { title: "Investments", href: "/investments" },
+];
 
-interface RootLayoutProps {
-  children: React.ReactNode
-}
-
-
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">
-        <Head>
-          <link rel="icon" href="/logo.webp" />
-        </Head>
-        <div className="space-y-6 p-4 sm:p-6 md:p-10 pb-16">
-          <section>
-            <Header />
-          </section>
-          <div className="flex flex-col space-y-8 lg:flex-row lg:space-x-12 lg:space-y-0">
-            <aside className="-mx-4 lg:w-1/5">
-              <SidebarNav items={sidebarNavItems} />
-            </aside>
-            <main className="flex-1 lg:max-w-6xl">{children}</main>
+      <body className="min-h-screen overflow-x-hidden font-sans">
+        <div className="mx-auto max-w-6xl px-5 py-6 sm:px-8 sm:py-8 lg:px-10">
+          <Header />
+          <div className="mt-6 grid gap-9 lg:mt-10 lg:grid-cols-[10rem_minmax(0,1fr)] lg:gap-14">
+            <aside><SidebarNav items={sidebarNavItems} /></aside>
+            <main className="min-w-0 pb-12">{children}</main>
           </div>
         </div>
       </body>
     </html>
-  )
+  );
 }
